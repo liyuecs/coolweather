@@ -1,11 +1,11 @@
-package com.example.android.util;
+package com.coolweather.android.util;
 
 import android.text.TextUtils;
 
-import com.example.android.db.City;
-import com.example.android.db.County;
-import com.example.android.db.Province;
-import com.example.android.gson.Weather;
+import com.coolweather.android.db.City;
+import com.coolweather.android.db.County;
+import com.coolweather.android.db.Province;
+import com.coolweather.android.gson.Weather;
 import com.google.gson.Gson;
 
 import org.json.JSONArray;
@@ -28,7 +28,7 @@ public class Utility {
                     JSONObject provinceObject = allProvinces.getJSONObject(i);
                     Province province = new Province();
                     province.setProvinceName(provinceObject.getString("name"));
-                    province.getProvinceCode(provinceObject.getInt("id"));
+                    province.setProvinceCode(provinceObject.getInt("id"));
                     province.save();
                 }
                 return true;

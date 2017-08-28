@@ -1,4 +1,4 @@
-package com.example.android.gson;
+package com.coolweather.android.gson;
 
 /**
  * Created by yueli on 17-8-24.
